@@ -1,0 +1,92 @@
+<html>
+    
+<head>
+        
+<title>
+ Sign UP</title>
+ <link rel="stylesheet" href="style.css"
+  </head>
+  <script>  
+  function randomString() {  
+          
+      var chars = "0123457MRSTUaewx";  
+
+      var string_length = 16;  
+      var randomstring = '';  
+      for (var i=0; i<string_length; i++) {  
+          var rnum = Math.floor(Math.random() * 16);  
+          randomstring += chars.substring(rnum,rnum+1);  
+      }  
+      document.getElementById("randomfield").innerHTML = randomstring;  
+  }  
+  
+
+  
+
+  </script>  
+
+<body>
+        
+<center>
+            
+<H1> HI , Welcome To Instagram</H1>
+            
+<h1> Happy to spend Time to friends</h1>
+             
+<t><h1>SIGN_UP</h1></t>
+<br> 
+<form action="img.html">
+<!--<b><t><h2>Name</h2></t></b>-->
+             
+<input type="text"  placeholder="Name" /><br><br><br>
+
+          
+<!--<b><t><h2>Phone Number</h2></t></b>-->
+             
+<input type="number"  placeholder="Phon_No" /><br><br><br>
+  
+           
+<!--<b><t><h2>Genter</h2></t></b>-->
+             
+<input type="text" placeholder="Genter" /><br><br><br>
+    
+        
+<!--<b><t><h2>Email</h2></t></b>-->
+             
+<input type="email" placeholder="E-Mail" /><br><br><br>
+    
+         
+<!--<b><t><h2>Password</h2></t></b>-->
+             
+<input type="password" placeholder="Password" /><br><br><br>
+  
+           
+<!--<b><t><h2>Confirm Password</h2></t></b>-->
+             
+<input type="text" placeholder="Confirm Password" /><br><br><br>
+  
+           
+<!--<b><t><h2>Country</h2></t></b>-->
+             
+<select name="country" placeholder="Country" />
+             
+<option value="country">INDIA</option>
+            
+ <option value="country">USA</option>
+             
+<option value="country">UAE</option>
+<option value="country">China</option>
+</select><br><br>
+<button value="Submit" onclick="randomString();">Submit</button>
+<h4 id="randomfield" style="color: white"> </h4> 
+</center>
+</form>
+<br>
+<center>
+<p class="1"> Instagram is a photo and video sharing social networking service
+ owned by American company Meta Platforms. The app allows users
+ to upload media that can be edited with filters and organized by hashtags and geographical tagging.
+ Posts can be shared publicly or with preapproved followers.</p></center>
+</body>
+</html>
+

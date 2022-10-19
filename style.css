@@ -1,0 +1,79 @@
+div {
+    width: 50px;
+    height: 5px;
+    background-color:white;
+    margin: 7px 0;
+    color: burlywood;
+  }
+body {
+    background-image: url("D:\ss.jpg");
+    opacity: 1;
+    background-size: cover;
+    font-size: 40px;
+    color: white;
+  }
+  h1{
+    color: antiquewhite;
+    font-family: "Brush Script MT", cursive;
+    color:black;
+    font-style:oblique;
+    font-size: 50px;
+}
+input type{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-family: 'Courier New', monospace;
+    font-size: 50px;
+    font-style:italic;
+    margin: 100%;
+    box-sizing: 50px;
+
+}
+input{
+    width:10%;
+    height:70px;
+    font-size: 30px;
+    border-radius: 20px;
+    color: black;
+    border-color: rgb(13, 129, 129);
+    text-align: center;
+}
+:focus{
+    outline: none;
+}
+   :focus::-ms-input-placeholder {
+    opacity: 0;
+    -webkit-transition: opacity .4s ease-in-out;
+    -moz-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+}
+p{
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+  
+}
+select{
+    padding: 40px 50px ;
+    font-size:20px;
+    font-weight: 500;
+    box-sizing: 60%;
+    border-radius: 80px;
+}
+button{
+    padding: 10px 20px;
+    background-color: transparent;
+    color:black;
+    font-size: 50px;
+    border-radius: 30px;
+}
+h4{
+    font-size: 80px;
+    letter-spacing: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+  
