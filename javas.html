@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <link rel="stylesheet" href="java.css">
+</head>
+<script>  
+    function randomString() {  
+            
+        var chars = "0123457MRSTUaewx";  
+
+        var string_length = 16;  
+        var randomstring = '';  
+        for (var i=0; i<string_length; i++) {  
+            var rnum = Math.floor(Math.random() * 16);  
+            randomstring += chars.substring(rnum,rnum+1);  
+        }  
+        document.getElementById("randomfield").innerHTML = randomstring;  
+    }  
+    function Runtext(){
+        step++;
+        ct.clearRect(0,0,cn.width,cn.height);
+        ct.save();
+        ct.translate(step,cn.height/2);
+        ct.fillText("");
+        ct.restore();
+        if(step<1){
+            var tm=setTimeout('RunText',delay);
+        }
+
+    }
+
+    </script>  
+ 
+
+<body>
+    <h1>LOG IN</h1>
+    <div class=form>
+        <input type="text" name="Name" placeholder="Name"><br><br><br><br>
+        <input type="password" name="Password" placeholder="Password"><br><br><br>
+        <button value="Submit" onclick="randomString();">Submit</button>
+<br><br>  
+<h4 id="randomfield" style="color: white"> </h4>  
+    </div>
+</body>
+</html>
