@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style type="text/css">
+        body{
+            background-color: black;
+            background-size: cover;
+            backface-visibility: visible;
+        }
+        h3{
+            font-size: 30px;
+            font-weight: 500;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px burlywood;
+        }
+        div#m1-div
+        {
+            width: 300px;
+            height: 300px;
+            background-image:url("D:\m5.jpg");
+            background-size: cover;
+            position: absolute;
+            transition: width 2s, height 2s, transform 2s;
+            top: 100px;
+            left: 200px;
+            z-index: 1;
+        }
+        div#m2-div
+        {
+            width: 300px;
+            height: 300px;
+            background-image:url("D:\m6.jpg");
+            background-size: cover;
+            position: absolute;
+            transition: width 2s, height 2s, transform 2s;
+            top: 250px;
+            left: 400px;
+            z-index: 2;
+        }
+        div#m3-div
+        {
+            width: 300px;
+            height: 300px;
+            background-image:url("D:\m3.jpg");
+            background-size: cover;
+            position: absolute;
+            transition: width 2s, height 2s, transform 2s;
+            top: 400px;
+            left: 600px;
+            z-index: -1;
+        }
+        div#m1-div:hover{
+            width: 100px;
+            height: 100px;
+            transform: rotate(180deg);
+        }
+        div#m2-div:hover{
+            width: 100px;
+            height: 100px;
+            transform: rotate(180deg);
+        }
+        div#m3-div:hover{
+            width: 100px;
+            height: 100px;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h3>Z-INDEX.,.</h3>
+    <div id="parent">
+        <div id="m1-div">
+        </div>
+        <div id="m2-div">
+        </div>    
+        <div id="m3-div">
+        </div>
+    </div>
+</body>
+</html>
