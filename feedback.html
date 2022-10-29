@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <style>
+        body{
+            background-image: url("D:\music6.jpg");
+            background-size: cover;
+        }
+        div{
+            box-sizing: border-box;
+            color: transparent;
+            text-align: center;
+            padding-top: 90px;
+            border-radius: 50px;
+            background-attachment: fixed;
+            
+        }
+        h1 {
+            
+            text-align: center;
+        }
+        h1 span{
+            color: blueviolet;
+        }
+        input type{
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+    font-family: 'Courier New', monospace;
+    font-size: 40px;
+    font-style:italic;
+    margin: 100%;
+    box-sizing: 50px;
+
+}
+input{
+    width:20%;
+    height:30px;
+    font-size: 15px;
+    border-radius: 20px;
+    color: black;
+    text-align: center;
+}
+
+        button{
+            width: 10%;
+            background-color:aliceblue;
+            text-align: center;
+            padding: 10px;
+            font-size: 15px;
+            position: relative;
+            border:none;
+            cursor: pointer;
+            border-radius: 35px;
+            cursor: pointer;
+        }
+        textarea{
+            width:30%;
+    height:250px;
+    font-size: 20px;
+    border-radius: 10px;
+    color: black;
+        }
+    </style>
+
+
+</script>
+
+<body>
+    <h1>Feed<span>BacK</span></h1>
+    <div class="form">
+       <input type="text" placeholder="Name"><br>
+        <br>
+         <input type="text" placeholder="Email"><br>
+        <br>
+        <textarea name="comments" rows="15" cols="50" placeholder="Your Feedbacks..."></textarea><br><br>
+        <br><br>
+    </div>
+    <center>
+        <button onclick="fun()">Submit</button>  
+    </center>
+        <p id="demo"></p>     
+        <script>
+            function fun(){
+                var text="Thaks for your feedback!";
+            window.alert(text);
+            }
+        </script>
+</body>
+</html>
